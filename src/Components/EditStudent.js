@@ -52,7 +52,7 @@ function EditStudent() {
     })
 
     useEffect(() => {
-      const index = StudentList.findIndex(obj => obj.id === id)
+      const index = StudentList.findIndex(obj => obj.id == id)
        formik.setValues(StudentList[index]);
   },[])
   
