@@ -54,7 +54,7 @@ function EditStudent() {
     useEffect(() => {
       const index = StudentList.findIndex(obj => obj.id === id)
        formik.setValues(StudentList[index]);
-  },[formik, id, StudentList])
+  },[])
   
     return (
       <div className="container">

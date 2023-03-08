@@ -68,7 +68,7 @@ function EditTeacher() {
   useEffect(() => {
       const index = teachersList.findIndex(obj => obj.id == id)
        formik.setValues(teachersList[index]);
-  },[ teachersList,formik, id])
+  },[])
   return (
     <div className="container">
       <form onSubmit={formik.handleSubmit}>
